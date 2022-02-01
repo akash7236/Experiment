@@ -4,38 +4,75 @@
 <head>
     <title>SK The God Who Lived on Earth!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <style>
-        @media screen and (orientation: portrait) {
-            .arts {
-                width: 80vw;
-                height: 80vw;
-            }
-        }
-
-        @media screen and (orientation: landscape) {
-            .arts {
-                width: 80vh;
-                height: 80vh;
-            }
-        }
-
-        .modalarts {
-            width: 230px;
-            height: 230px;
-        }
-
         body {
+            background-color: #6b6565;
+            margin: 0px;
+            padding: 30px;
+
+        }
+
+        .img-items {
+            height: 90vh;
+            width: auto;
+            padding: 5px;
             overflow: hidden;
+        }
+
+        .img-items img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+            object-fit: cover;
         }
     </style>
 </head>
 
-<body class="bg-dark" scroll="no">
-    <h3 style="color: white;font-size: 24px;">#AaaaaaaSK</h3>
-    <div class="d-flex flex-column align-items-center">
-        <img class="img-fluid img-thumbnail arts" src="assets\images\IMG_20170902.jpg" />
+<body>
+    <div class="variable-width">
+        
+
+        <div class="img-items"><img src="assets\images\10.jpg" /></div>
+        <div class="img-items"><img src="assets\images\47.jpg" /></div>
+        <div class="img-items"><img src="assets\images\130.jpg" /></div>
+        <div class="img-items"><img src="assets\images\DSCN0939.JPG" /></div>
+        <div class="img-items"><img src="assets\images\IMG_20170225_093620.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG_20170902.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG_20190304_234614.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG-20210929-WA0010.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG-20211109-WA0007.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG-20211119-WA0007.jpg" /></div>
+        <div class="img-items"><img src="assets\images\IMG-20211214-WA0009.jpg" /></div>
     </div>
+
 </body>
+
+<script>
+
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+    });
+
+    $('.variable-width').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+</script>
 
 </html>
