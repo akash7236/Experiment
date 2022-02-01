@@ -48,6 +48,16 @@
             overflow: hidden;
         }
 
+        .slick-slide {
+            opacity: 0.1;
+            filter: blur(5px);
+        }
+
+        .slick-active{
+            opacity: 1;
+            filter: blur(0px);
+        }
+
         .img-items img {
             height: 100%;
             width: 100%;
@@ -123,8 +133,8 @@
                 infinite: true,
                 speed: 300,
                 slidesToShow: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
                 centerMode: true,
                 variableWidth: true
             });
