@@ -119,22 +119,24 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(() => {
+            $('.images').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                
+                variableWidth: true
+            });
+        });
+    </script>
+
 </body>
 
-<script>
-    $(document).ready(() => {
-        $('.images').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true,
-            variableWidth: true
-        });
-    });
 
-    // autoplay: true,
-    //     autoplaySpeed: 2000,
-</script>
 
 </html>
